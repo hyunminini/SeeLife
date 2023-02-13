@@ -1,0 +1,94 @@
+
+@keyframes ani3{
+              0%{
+                transform:translate(5px,-5px);
+                  }
+              50%{
+                transform: translate(-5px,5px)
+                  }
+              100%{
+                transform: translate(5px,-5px);
+                  }
+                }
+@keyframes ho{
+                0%{
+                 transform: translate(-100px,0px)
+                    }
+                50%{
+                transform: translate(0px,0px)
+                    }
+                100%{
+                transform: translate(-100px,0px)
+                    
+                    }
+}
+@keyframes an{
+              0%{
+                transform:translate(0px,-40px);
+                  }
+                }
+
+@keyframes ani4{
+              0%{
+                transform:translate(0px,-10px);
+                  }
+              50%{
+                transform: translate(0px,10px)
+                  }
+              100%{
+                transform: translate(0px,-10px);
+                  }
+                }
+@keyframes peng{
+              0%{
+                transform:translate(-50px,-95px);
+                  }
+                }
+
+@keyframes car{
+              0%{
+                transform:translate(147px,-80px);
+                  }
+                }
+@keyframes car2{
+              0%{
+                transform:translate(-190px,-125px);
+                  }
+}
+
+@keyframes rt{
+              0%{
+                transform:translate(0px,-5px);
+                  }
+              50%{
+                transform: translate(0px,5px)
+                  }
+              100%{
+                transform: translate(0px,-5px);
+                  }
+}
+@keyframes prev{
+              0%{
+                transform:translate(0px,-3px);
+                  }
+              50%{
+                transform: translate(0px,3px)
+                  }
+              100%{
+                transform: translate(0px,-3px);
+                  }
+
+
+    
+
+@keyframes submarin{
+              0%{
+                transform:translate(0px,-5px);
+                  }
+              50%{
+                transform: translate(0px,5px)
+                  }
+              100%{
+                transform: translate(0px,-5px);
+                  }
+                }

@@ -1,0 +1,1874 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}  
+*{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    font-family: BMJUA, sans-serif;
+}
+
+#wrap{
+    height: 1200px;/*높이값 임의로 늘려도 상관없을 듯.*/
+    background: linear-gradient(to bottom, darkseagreen, #2384c1);
+    position: relative;
+}
+
+.pc_layer3{
+    display: none;
+}
+
+.logo{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+    height: auto;
+    z-index: 10;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.click_btn{
+    width: 50px;
+    height: auto;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+}
+
+.btn h3{
+    position: fixed;
+    right: 80px;
+    top: 25px;
+    color: #fff;
+    z-index: 100;
+}
+
+.click_nav h3{
+    position: absolute;
+    right: 85px;
+    top: 35px;
+    color: #fff;
+}
+
+.click_btn img{
+    width: 100%;
+    height: auto;
+}
+
+.bn_box{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    font-size: 0px;
+    bottom: 0px;
+}
+
+.bn_box img{
+    width: 100%;
+    height: auto;
+}
+
+.bn_btn{
+    padding: 5px 50px 5px 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.bn_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.back_buble{
+    width: 100px;
+    height: auto;
+    z-index: 10;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.back_img img{
+    width: 100%;
+    height: auto;
+}
+
+.back_buble.back_buble1{
+    left: 0px;
+    top: 100px;
+}
+
+.back_buble.back_buble2{
+    right: 0px;
+    top: 200px;
+}
+
+.back_fish{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    opacity: 0.7;
+}
+
+.back_fish.back_fish1{
+    right: 0px;
+    top: 650px;
+    animation:backfish 42s infinite;
+}
+
+@keyframes backfish{
+              0%{
+                transform:translate(-300px,-20px);
+                  }
+                }
+
+.back_fish.back_fish2{
+    left: 0px;
+    top: 450px;
+    animation:backfish2 42s infinite;
+}
+
+@keyframes backfish2{
+              0%{
+                transform:translate(200px,20px);
+                  }
+                }
+
+.click_nav{
+    background-color: rgba(20,50,90,0.9);
+/*    background-color: #274767;*/
+    width: 280px;
+    height: 100%;
+    right: -130%;
+    top: 0px;
+    z-index: 500;
+    position: fixed;
+}
+
+.click_nav ul{
+    padding-top: 100px;
+}
+
+.click_nav ul li{
+    color: #ddd;
+    font-weight: lighter;
+    line-height: 45px;
+    border-bottom: 1px solid #181818;
+    text-align: center;
+}
+
+.click_nav ul li a{
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    background-size: 38px auto;
+}
+
+.click_nav ul li:first-child{
+    border-top: 1px solid #181818;
+}
+
+.click_nav ul li a:hover{
+    color: #fff;
+    background-image: url(images/nav_in.png);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3) inset;
+}
+
+.click_btn #img2{
+    display: none;
+}
+
+.box{
+    width: 100%;
+    height: 30px;
+    background-color: #1e98bb;
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+}
+
+.sub{
+     color: #fff;
+     font-size: 12px;
+     text-align: center;
+    
+}
+
+.sub li{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 8px;
+    margin-top: 0px;
+    content: '|';
+    z-index: 10;
+    
+}
+
+.sub li:after{
+    content: '|';
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.sub li:last-child:after{
+    content: none;
+}
+
+.sub li:hover{
+    transform: scale(1.05);
+}
+
+.submarin{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    bottom: 36%;
+    right: 10%;
+    opacity: 0.8;
+    animation:ani2 12s infinite;
+    z-index: 10;
+}
+
+@keyframes ani2{
+              0%{
+                transform:translate(0px,-20px);
+                  }
+              50%{
+                transform: translate(0px,20px)
+                  }
+              100%{
+                transform: translate(0px,-20px);
+                  }
+                }
+
+.submarin img{
+    width: 100%;
+    height: auto;
+}
+
+.video{
+    position: fixed;
+    left: 20px;
+    top: 17%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: auto;
+    z-index: 110;
+}
+
+.video img{
+    width: 100%;
+    height: auto;
+}
+
+.video:hover{
+    width: 60px;
+}
+
+.bg_layer{
+    width: 240px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+}
+
+.bg_layer img{
+    width: 100%;
+    height: auto;
+}
+
+.board_wrap{
+    position: fixed;
+    left: 50%;
+    top: 0;
+    z-index: 100;
+    transform: translate(-50%, -137px);
+}
+
+.board{
+    width: 240px;
+    height: auto;
+    position: absolute;
+    top: 137px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.board img{
+    width: 100%;
+    height: auto;
+}
+
+.stick{
+    position:absolute;
+    width: 140px;
+    height: auto;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+}
+
+.stick img{
+    width: 100%;
+    height: auto;
+}
+
+.txt{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
+.txt img{
+    width: 100%;
+    height: auto;
+}
+
+.txt_bt{
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 340px;
+    font-weight: lighter;
+
+}
+
+.layer1{
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    height: 1151px;
+    transform: translateY(-400px);/*출발지점*/
+    display: none;
+}
+        
+.layer2{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    height: 680px;
+    transform: translateY(-200px);/*출발지점*/
+    display: none;
+}
+        
+.layer3{
+    width: 100%;
+    position: absolute;
+    height: 603px;
+    bottom: 0px;/*바닥에 고정*/
+    left: 50%;
+    transform: translateX(-50%);
+    display: 
+}
+
+.layerm2{
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    width: 100%;
+    height: 600px;
+}
+        
+.layerm3{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    height: 680px;
+}
+
+
+.layerm2 img{
+    width: 100%;
+}
+
+.layerm3 img{
+    width: 100%;
+}
+
+.prev_peng{
+    width: 80px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 70%;
+    z-index: 300;
+}
+
+.prev_peng img{
+    width: 100%;
+    height: auto;
+}
+
+.main_img{
+    position: absolute;
+    bottom: 0px;
+    font-size: 0px;
+}
+
+.layer1 img{
+    width: 100%;
+    height: auto;
+}
+
+.layer2 img{
+    width: 100%;
+    height: auto;
+
+}
+.layer3 img{
+    width: 100%;
+    height: auto;
+}     
+
+.layer3_img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.click_tunnel{
+    width: 12%;
+    height: auto;
+    position: absolute;
+    left: 46%;
+    top: 27%;
+    z-index: 1000;
+}
+
+.click_tunnel img{
+    width: 100%;
+    height: auto;
+}
+
+.click_tunnel:hover{
+    content: url(images/main_tunnel_hover.png);
+}
+
+.click_jell{
+    width: 21%;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 54.4%;
+    transform: rotate(-0.8deg);
+    z-index: 20;
+}
+.click_jell img{
+    width: 100%;
+    height: auto;
+}
+
+.click_jell:hover{
+    content: url(images/main_jellyfish_hover.png);
+}
+
+.click_sudal{
+    width: 14%;
+    height: auto;
+    position: absolute;
+    top: 14%;
+    left: 34%;
+    z-index: 20;
+}
+
+.click_sudal img{
+    width: 100%;
+    height: auto;
+}
+
+.click_sudal:hover{
+    content: url(images/main_anotter_hover.png);
+}
+
+.click_shark{
+    width: 8.2%;
+    height: auto;
+    position: absolute;
+    top: 44%;
+    left: 15%;
+}
+
+.click_shark img{
+    width: 100%;
+    height: auto;
+}
+
+.click_shark:hover{
+    content: url(images/main_shark_hover.png);
+}
+
+.click_pengin{
+    width: 10%;
+    height: auto;
+    position: absolute;
+    top: 32%;
+    left: 71%;
+    z-index: 20;
+}
+
+.click_pengin img{
+    width: 100%;
+    height: auto;
+}
+
+.click_pengin:hover{
+    content: url(images/main_penguin_hover.png);
+}
+
+.pengin_balloon{
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 41%;
+    left: 79%;
+    z-index: 100;
+}
+.pengin_ballon img{
+    width: 100%;
+    height: auto;
+}
+.jell{
+    background-image: url(images/jellfish.gif);
+    width: 15%;
+    height: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 30%;
+    right: 22%;
+    animation:ani3 7s infinite;
+    z-index: 20;
+    pointer-events: none; 
+}
+
+.jell2{
+    background-image: url(images/jellfish_right.gif);
+    width: 14%;
+    height: 14%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 31%;
+    right: 31%;
+    animation:ani3 10s infinite;
+    z-index: 20;
+    pointer-events: none; 
+}
+
+
+.seahorse{
+    width: 2%;
+    height: 1%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation:ho 36s infinite;
+}
+
+.seahorse img{
+    width: 100%;
+    height: auto;
+}
+
+.pinkjell{
+    background-image: url(images/pinkjellfish.gif);
+    width: 6%;
+    height: 6%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 34%;
+    right: 33%;
+    animation:ani4 16s infinite;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.pinkjell2{
+    background-image: url(images/pinkjellfish.gif);
+    width: 5%;
+    height: 5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+    pointer-events: none; 
+    z-index: 10px;
+}
+
+.anatter{
+    background-image: url(images/sudar1.gif);
+    width: 8%;
+    height: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 28%;
+    right: 48%;
+    pointer-events: none;
+    z-index: 30;
+}
+
+.anatter2{
+    background-image: url(images/sudar2.gif);
+    width: 4%;
+    height: 4%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    animation:an 32s infinite;
+    pointer-events: none;
+    display: none;
+    z-index: 30;
+}
+
+
+.anatter3{
+    background-image: url(images/sudar3.gif);
+    width: 8%;
+    height: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 35%;
+    right: 58%;
+    pointer-events: none;
+    z-index: 30;
+}
+
+.anatter4{
+    background-image: url(images/sudar4.gif);
+    width: 8%;
+    height: 8%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 28%;
+    right: 52%;
+    pointer-events: none; 
+    z-index: 30;
+}
+
+
+.peng{
+    background-image: url(images/pengin1.gif);
+    width: 5%;
+    height: 5%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 1%;
+    right: 3%;
+    animation: peng 23s infinite;
+}
+
+
+.car{
+    position: absolute;
+    top: 67%;
+    left: 40.5%;
+    animation:car 24s both;
+    width: 3%;
+    height: 3%;
+}
+
+.car img{
+    width: 100%;
+    height: auto;
+}
+
+
+.car2{
+    position: absolute;
+    bottom: 26px;
+    right: 0px;
+    animation:car2 26s infinite;
+    width: 3%;
+    height: 3%;
+/*
+    transform: rotate(255deg);
+    transform: scaleX(-1)
+*/
+}
+
+.car2 img{
+    width: 100%;
+    height: auto;
+}
+
+.rotatefish{
+    position: absolute;
+    z-index: 3;
+    width: 12%;
+    height: 12%;
+    top: 35%;
+    left: 43.5%;
+    animation:rt 8s infinite;
+    pointer-events: none;
+    z-index: 1100;
+}
+
+.rotatefish img{
+    width: 100%;
+    height: auto;
+}
+
+.click_prev{
+    width: 3%;
+    height: 3%;
+    position: absolute;
+    top: 28%;
+    left: 48.6%;
+    z-index: 30;
+    pointer-events: none;
+    animation:prev 3s infinite;
+}
+
+
+.click_prev img{
+    width: 100%;
+    height: auto;
+}
+
+.click_prev.prev2{
+    position: absolute;
+    left: 76%;
+    top: 26%;
+}
+
+.click_prev.prev3{
+    position: absolute;
+    left: 66.5%;
+    top: 44%;
+}
+
+.click_prev.prev4{
+    position: absolute;
+    left: 18%;
+    top: 38%;
+}
+
+.click_prev.prev5{
+    position: absolute;
+    left: 45%;
+    top: 14%;
+}
+.board2{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 10%;
+    height: auto;
+}
+
+.board2 img{
+    width: 100%;
+    height: auto;
+}
+.sharkboat{
+    position: absolute;
+    top: 43%;
+    left: 23.5%;
+    transform: translateX(-50%);
+    width: 6%;
+    height: auto;
+    animation: boat 12s infinite;
+}
+.sharkboat img{
+    width: 100%;
+    height: auto;
+}
+
+.ball{
+    background-image: url(images/ball.gif);
+    width: 10%;
+    height: 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 13%;
+    right: 20.5%;
+}
+.fish{
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    width: 5%;
+    height: auto;
+    animation:fish 24s infinite;        
+}
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 120;
+    display: none;
+}
+.output img{
+    width: 100%;
+    height: auto;
+}
+.cover .output{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+        
+.cover .close{
+    width: 100%;
+    height: 100%;
+}
+
+.cover2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 110;
+    display: none;
+}
+.output2 img{
+    width: 100%;
+    height: auto;
+}
+.cover2 .output2{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.op_txtbox p{
+    font-size: 10px;
+    color: #5b5282;
+    position: absolute;
+    left: 54%;
+    width: 200px;
+    transform: translateX(-50%);
+    z-index: 200;
+    bottom: 35px;
+    line-height: 15px;
+}
+.op_txtbox2 p{
+    font-size: 10px;
+    color: #5b5282;
+    position: absolute;
+    left: 52%;
+    transform: translateX(-50%);
+    z-index: 200;
+    bottom: 30px;
+    line-height: 18px;
+}
+iframe{
+    width: 365px;
+    height: 315px;
+}
+.op_inbtn{
+    width: 150px;
+    height: 25px;
+    background-color: #1aa4da;
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.op_inbtn p{
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    padding-top: 6px;
+}
+        
+.cover2 .close{
+    width: 100%;
+    height: 100%;
+}
+
+.cover3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 120;
+    display: none;
+}
+.output3 img{
+    width: 100%;
+    height: auto;
+}
+.cover3 .output3{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.output3 .in_box{
+    width: 100%;
+    height: 150px;
+    background-color: #fbf2de;
+    position: relative;
+}
+.in_box.dalsu{
+    background-color: #c5a178;
+}
+.in_box.dalja{
+    background-color: #edb496;
+}
+.in_box.dalji{
+    background-color: #f1e6b4
+}
+.sudal_logo{
+    width: 60px;
+    height: auto;
+    padding: 25px;
+}
+.sudal_logo img{
+    width: 100%;
+    height: auto;
+}
+.sudal_fam{
+    width: 165px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sudal_fam img{
+    width: 100%;
+    height: auto;
+}
+.in_dalsu{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.in_dalsu img{
+    width: 100%;
+    height: auto;
+}
+.dalsu h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.dalsu h3 span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.dalsu p{
+    font-size: 8px;
+    color: #2f3030;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.txt_wrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.in_dalja{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.in_dalja img{
+    width: 100%;
+    height: auto;
+}
+.dalja h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.dalja h3 span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.dalja p{
+    font-size: 8px;
+    color: #2f3030;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.txt_wrap2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px
+}
+.in_dalji{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.in_dalji img{
+    width: 100%;
+    height: auto;
+}
+.dalji h3{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.dalji h3 span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.dalji p{
+    font-size: 8px;
+    color: #2f3030;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+        
+.cover3 .close{
+    width: 100%;
+    height: 100%;
+}
+
+.cover4{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 120;
+    display: none;
+}
+.cover4 .output4{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+        
+.cover4 .close{
+    width: 100%;
+    height: 100%;
+}
+.cover5{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 120;
+    display: none;
+}
+.cover5 .output5{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 420px;
+}
+.output5 img{
+    width: 100%;
+    height: auto;
+}
+        
+.cover5 .close{
+    width: 100%;
+    height: 100%;
+}
+
+.cover6{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% ; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 120;
+    display: none;
+}
+.output6 img{
+    width: 100%;
+    height: auto;
+}
+.cover6 .output6{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+        
+.cover6 .close{
+    width: 100%;
+    height: 100%;
+}
+
+.in_jell{background-image:                  url(images/jellfish_right.gif);
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 30%;
+    right: 10%;
+    animation:ani3 10s infinite;
+    z-index: 20;
+    pointer-events: none; 
+}
+.in_pinkjell{
+    background-image: url(images/pinkjellfish.gif);
+    width: 15%;
+    height: 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    animation:ani4 16s infinite;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.in_jell2{background-image:                  url(images/jellfish.gif);
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 40%;
+    left: 2%;
+    animation:ani3 10s infinite;
+    z-index: 20;
+    pointer-events: none; 
+}
+
+.in_marin img{
+    width: 100%;
+    height: auto;
+}
+
+.in_marin{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    opacity: 0.8;
+    animation:submarin 10s infinite;
+}
+
+.fish img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.fish2{
+    position: absolute;
+    top: 40%;
+    width: 5%;
+    height: auto;
+    left: 0px;
+    animation:fish2 24s infinite;
+    z-index: 100;
+}
+
+
+
+.fish2 img{
+    width: 100%;
+    height: auto;
+}
+
+.fish3{
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+    animation:fish4 32s infinite;
+    width: 5%;
+    height: auto;
+    z-index: 20;
+}
+
+@keyframes fish4{
+              0%{
+                transform:translate(280px,-20px);
+                  }
+                }
+
+@keyframes fish2{
+              0%{
+                transform:translate(250px,20px);
+                  }
+                }
+
+@keyframes fish{
+              0%{
+                transform:translate(-300px,-20px);
+                  }
+                }
+@keyframes boat{
+              0%{
+                transform:translate(2px,-2px);
+                  }
+              50%{
+                transform: translate(-2px,4px)
+                  }
+              100%{
+                transform: translate(2px,-4px);
+                  }
+                }
+                }
+
+
+.fish3 img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.gray{
+    position: absolute;
+    top: 58%;
+    left: 31%;
+    animation:fish3 8s infinite;
+    width: 6%;
+    height: 6%;
+    z-index: 1;
+}
+
+.gray img{
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fish3{
+              0%{
+                transform:translate(0px,-5px);
+                  }
+              50%{
+                transform: translate(0px,5px)
+                  }
+              100%{
+                transform: translate(0px,-5px);
+                  }
+                }
+
+.ticket{
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    width: 90px;
+    height: auto;
+    z-index: 100;
+}
+
+.ticket img{
+    width: 100%;
+    height: auto;
+}
+
+.tk:hover{
+    content: url(images/hover_ticket.png);
+}
+
+@media all and (min-width: 648px){
+    
+#wrap{
+    height: 1500px;/*높이값 임의로 늘려도 상관없을 듯.*/
+} 
+
+.click_nav{
+    width: 350px;
+}
+
+.click_nav ul{
+    padding-top: 100px;
+}
+
+.click_nav ul li{
+    color: #ddd;
+    font-weight: lighter;
+    line-height: 67px;
+    border-bottom: 1px solid #181818;
+    text-align: center;
+}  
+
+.bn_box{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    font-size: 0px;
+    bottom: 0px;
+}    
+
+iframe{
+    width: 565px;
+    height: 315px;
+}    
+
+.txt{
+    width: 380px;
+    top: 260px;
+}
+    
+.txt_bt{
+    top: 380px;
+    font-size: 22px;
+}         
+
+.logo{
+    width: 90px;
+}  
+
+.video{
+    width: 60px;
+}
+
+.video:hover{
+    width: 70px;
+}      
+
+.bg_layer{
+    width: 300px;
+}
+    
+.layerm2{
+    bottom: 200px;
+    height: 600px;
+}
+        
+.layerm3{
+    bottom: 190px;
+    width: 100%;
+    height: 680px;
+}
+    
+.sub li:after{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+.prev_peng{
+    width: 100px;
+    bottom: 70%;
+}
+
+.submarin{
+    width: 100px;
+    bottom: 45%;
+    right: 10%;
+}        
+    
+}
+@media all and (min-width: 848px){
+
+#wrap{
+    height: 2300px;/*높이값 임의로 늘려도 상관없을 듯.*/
+}
+
+.board{
+    width: 320px;
+}
+
+.stick{
+    width: 140px;
+}
+
+.txt{
+    width: 420px;
+    top: 270px;
+}
+    
+.txt_bt{
+    top: 400px;
+    font-size: 22px;
+}
+
+.back_buble{
+    width: 120px;
+}
+
+.back_buble.back_buble1{
+    left: 100px;
+    top: 150px;
+}
+
+.back_buble.back_buble2{
+    right: 100px;
+    top: 240px;
+}    
+    
+.bg_layer{
+    width: 480px;
+}
+    
+.pc_layer3{
+    display: block;
+}
+    
+.anatter2{
+    display: block;
+}    
+
+.layerm2{
+    display: none;
+}
+        
+.layerm3{
+    display: none;
+}    
+    
+.m_layer3{
+        display: none;
+}
+    
+.box{
+    height: 30px;
+}
+    
+.submarin{
+    bottom: 20%;
+    right: 10%;
+}    
+
+.sub{
+     font-size: 16px;
+    
+}
+
+.sub li{
+    padding-top: 8px;
+    
+}
+
+.sub li:after{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+    
+.layer1{
+    bottom: 0;
+    height: 1151px;
+    display: block;
+}
+        
+.layer2{
+    bottom: 0;
+    height: 680px;
+    display: block;
+} 
+    
+.click_tunnel{
+    width: 7%;
+    left: 48%;
+    top: 36%;
+}
+
+.click_jell{
+    width: 11.5%;
+    top: 43%;
+    left: 52%;
+}
+
+.click_sudal{
+    width: 8%;
+    top: 26%;
+    left: 41%;
+}
+
+.click_shark{
+    width: 4.2%;
+    top: 53%;
+    left: 32%;
+}
+
+.click_pengin{
+    width: 5%;
+    top: 43%;
+    left: 60%;
+}
+
+.pengin_balloon{
+    width: 2%;
+    top: 50%;
+    left: 64%;
+}
+    
+.jell{
+    width: 12%;
+    height: 12%;
+    bottom: 30%;
+    right: 31%;
+}
+
+.jell2{
+    width: 14%;
+    height: 14%;
+    bottom: 27%;
+    right: 35%;
+}
+
+
+.seahorse{
+    width: 1%;
+    height: 1%;
+    top: 24%;
+    left: 35%;
+}
+
+.pinkjell{
+    width: 6%;
+    height: 6%;
+    bottom: 29%;
+    right: 36%;
+}
+
+.pinkjell2{
+    width: 5%;
+    height: 5%;
+    bottom: 28%;
+    right: 41%;
+}
+
+.anatter{
+    width: 6%;
+    height: 6%;
+    top: 40%;
+    right: 47%;
+}
+
+.anatter2{
+    width: 4%;
+    height: 4%;
+    top: 30%;
+    left: 15%;
+}
+
+
+.anatter3{
+    width: 6%;
+    height: 6%;
+    top: 46%;
+    right: 52%;
+}
+
+.anatter4{
+    width: 6%;
+    height: 6%;
+    top: 40%;
+    right: 49%;
+}
+
+
+.peng{
+    width: 5%;
+    height: 5%;
+    bottom: 1%;
+    right: 3%;
+}
+
+
+.car{
+    top: 72%;
+    left: 44.5%;
+    width: 2%;
+    height: 2%;
+}
+
+.car2{
+    bottom: 0px;
+    right: 18.7%;
+    width: 2%;
+    height: 2%;
+}
+
+.rotatefish{
+    width: 6%;
+    height: 6%;
+    top: 42%;
+    left: 47%;
+}
+
+.click_prev{
+    width: 2%;
+    height: 2%;
+    top: 35%;
+    left: 49.6%;
+}
+
+.click_prev.prev2{
+    left: 62%;
+    top: 36%;
+}
+
+.click_prev.prev3{
+    left: 58.5%;
+    top: 48%;
+}
+
+.click_prev.prev4{
+    left: 33%;
+    top: 46%;
+}
+
+.click_prev.prev5{
+    left: 44%;
+    top: 20%;
+}
+.board2{
+    bottom: 10px;
+    left: 5%;
+    width: 8%;
+}
+
+.sharkboat{
+    top: 51%;
+    left: 36.5%;
+    width: 3.5%;
+}
+
+.ball{
+    width: 10%;
+    height: 10%;
+    bottom: 10%;
+    right: 30.5%;
+}
+    
+.fish{
+    top: 20%;
+    right: 0px;
+    width: 5%;    
+}
+
+.gray{
+    top: 60%;
+    left: 40%;
+    width: 4%;
+    height: 4%;
+}
+
+.ticket{
+    right: 20px;
+    bottom: 40px;
+    width: 120px;
+}
+
+.prev_peng{
+    width: 110px;
+    width: 110px;
+    bottom: 70%;
+}
+    
+}
+
+@media all and (min-width: 1368px){
+
+.board{
+    width: 360px;
+}
+    
+.cover2 .output2{
+    width: 620px;
+    height: 620px;
+}
+
+    
+.op_txtbox p{
+    font-size: 14px;
+    left: 53%;
+    width: 270px;
+    bottom: 60px;
+    line-height: 20px;
+}
+.op_txtbox2 p{
+    font-size: 14px;
+    left: 52%;
+    bottom: 55px;
+    line-height: 20px;
+} 
+
+.cover5 .output5{
+    width: 620px;
+    height: 620px;
+}    
+
+.stick{
+    width: 140px;
+}
+
+.txt{
+    width: 460px;
+    top: 290px;
+}
+    
+.txt_bt{
+    top: 440px;
+    font-size: 24px;
+}
+
+.back_buble{
+    width: 160px;
+}
+
+.back_buble.back_buble1{
+    left: 240px;
+    top: 150px;
+}
+
+.back_buble.back_buble2{
+    right: 240px;
+    top: 240px;
+}
+
+.back_fish{
+    width: 120px;
+}
+
+.back_fish.back_fish1{
+    top: 1000px;
+}
+
+@keyframes backfish{
+              0%{
+                transform:translate(-1200px,-20px);
+                  }
+                }
+
+.back_fish.back_fish2{
+    top: 600px;
+}
+
+@keyframes backfish2{
+              0%{
+                transform:translate(1200px,20px);
+                  }
+                }    
+
+.box{
+    height: 46px;
+}
+    
+.submarin{
+    width: 170px;
+    bottom: 26%;
+    right: 17%;
+}    
+
+.sub{
+     font-size: 18px;
+    
+}
+
+.sub li{
+    padding-top: 15px;
+    
+}
+
+.sub li:after{
+    padding-left: 60px;
+    padding-right: 60px;
+
+}    
+
+.ticket{
+    right: 20px;
+    bottom: 50px;
+    width: 187px;
+}    
+
+
+.prev_peng{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    bottom: 70%;
+}    
+
+.logo{
+    width: 100px;
+}
+
+.video{
+    left: 20px;
+    top: 17%;
+    width: 70px;
+}
+
+.video:hover{
+    width: 80px;
+}
+    
+.click_nav{
+    width: 400px;
+}
+
+.click_nav ul{
+    padding-top: 100px;
+}
+
+.click_nav ul li{
+    line-height: 94px;
+}
+
+.bn_box{
+    width: 605px;
+}
+
+.car2{
+    bottom: 20px;
+    right: 20.5%;
+    width: 2%;
+    height: 2%;
+}  
+
+}

@@ -1,0 +1,17 @@
+let onOff = true;
+        
+        $(".all_btn").click(function(){
+            $(this).toggleClass("on");
+            
+            onOff = !onOff;
+
+            if(onOff === false){
+                $(".click_nav").stop().animate({
+                    "right" : 0
+                })
+            } else {
+                $(".click_nav").stop().animate({
+                    "right" : "-100%"
+                })
+            }
+        })
